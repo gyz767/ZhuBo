@@ -1,5 +1,9 @@
 DOMAIN-KEYWORD,immtel
 DOMAIN-SUFFIX,immtel.co
+IP-CIDR,172.67.160.0/24,no-resolve
+IP-CIDR,104.21.14.0/24,no-resolve
+IP-CIDR,2606:4700:3033::/48,no-resolve
+IP-CIDR,2606:4700:3032::/48,no-resolve
 DOMAIN,btrace.qq.com
 DOMAIN,dl.wechat.com
 DOMAIN,dldir1.qq.com
@@ -118,7 +122,7 @@ IP-CIDR,121.40.6.0/24,no-resolve
 IP-CIDR,47.116.84.0/24,no-resolve
 IP-CIDR,47.108.36.0/24,no-resolve
 IP-CIDR, 106.55.0.0/16,no-resolve
-IP-CIDR,2408:4009:500::/48
+IP-CIDR,2408:4009:500::/48,no-resolve
 PROCESS-NAME,dotnet_4.6.2.exe
 PROCESS-NAME,usbmuxd.exe
 PROCESS-NAME,plistutil.exe
