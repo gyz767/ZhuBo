@@ -2718,7 +2718,6 @@ DOMAIN-SUFFIX,routewize.com
 DOMAIN-SUFFIX,rrmj.tv
 DOMAIN-SUFFIX,rsc.org
 DOMAIN-SUFFIX,rtbasia.com
-DOMAIN-SUFFIX,ru-northwest-2.myhuaweicloud.com
 DOMAIN-SUFFIX,ruan8.com
 DOMAIN-SUFFIX,ruanmei.com
 DOMAIN-SUFFIX,ruby-china.org
@@ -2729,7 +2728,7 @@ DOMAIN-SUFFIX,runsheng.com
 DOMAIN-SUFFIX,rzrc114.com
 DOMAIN-SUFFIX,s-microsoft.com
 DOMAIN-SUFFIX,s-reader.com
-DOMAIN-SUFFIX,sa-brazil-1.myhuaweicloud.com
+DOMAIN-SUFFIX,myhuaweicloud.com
 DOMAIN-SUFFIX,saasops.tech
 DOMAIN-SUFFIX,saayaa.com
 DOMAIN-SUFFIX,sagepub.com
@@ -2933,7 +2932,7 @@ DOMAIN-SUFFIX,tamaegis.com
 DOMAIN-SUFFIX,tandfonline.com
 DOMAIN-SUFFIX,tangeche.com
 DOMAIN-SUFFIX,tanx.com
-DOMAIN-SUFFIX,tanxlog.istreamsche.com
+DOMAIN-SUFFIX,istreamsche.com
 DOMAIN-SUFFIX,tao123.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,taobao.org
@@ -3139,7 +3138,7 @@ DOMAIN-SUFFIX,u.tools
 DOMAIN-SUFFIX,u17.com
 DOMAIN-SUFFIX,u17i.com
 DOMAIN-SUFFIX,u17t.com
-DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com
+DOMAIN-SUFFIX,8le8le.com
 DOMAIN-SUFFIX,ubssdic.com
 DOMAIN-SUFFIX,ubuntukylin.com
 DOMAIN-SUFFIX,ucbug.com
@@ -3686,7 +3685,7 @@ DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
 DOMAIN-SUFFIX,zyh365.com
 DOMAIN-SUFFIX,zzdtec.com
-DOMAIN-KEYWORD,.tmall.com
+DOMAIN-KEYWORD,.tmall
 DOMAIN-KEYWORD,alicdn
 DOMAIN-KEYWORD,alipay
 DOMAIN-KEYWORD,aliyun
@@ -3712,7 +3711,7 @@ IP-CIDR,185.188.34.0/24,no-resolve
 IP-CIDR,185.188.35.0/24,no-resolve
 IP-CIDR,203.205.238.0/23,no-resolve
 IP-CIDR,203.205.254.0/23,no-resolve
-IP6-CIDR,2a0b:b580::/48,no-resolve
-IP6-CIDR,2a0b:b581::/48,no-resolve
-IP6-CIDR,2a0b:b582::/48,no-resolve
-IP6-CIDR,2a0b:b583::/48,no-resolve
+IP-CIDR,2a0b:b580::/48,no-resolve
+IP-CIDR,2a0b:b581::/48,no-resolve
+IP-CIDR,2a0b:b582::/48,no-resolve
+IP-CIDR,2a0b:b583::/48,no-resolve
