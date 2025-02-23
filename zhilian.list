@@ -43,6 +43,7 @@ DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
+PROCESS-NAME,clash-win64.exe
 PROCESS-NAME,WeChat.app
 PROCESS-NAME,WeChatAppEx Helper.app
 IP-CIDR,43.152.25.0/24,no-resolve
