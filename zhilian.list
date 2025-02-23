@@ -61,6 +61,7 @@ PROCESS-NAME,iFlytekIME.app
 PROCESS-NAME,ToDesk.app
 IP-CIDR,43.135.63.0/24,no-resolve
 PROCESS-NAME,iFlyIMELoader.exe
+PROCESS-NAME,BaiduNetdisk.exe
 PROCESS-NAME,iFlyHandwriting.exe
 PROCESS-NAME,iFlyIMEConfig.exe
 PROCESS-NAME,iFlyIMEGuide.exe
