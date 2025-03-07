@@ -1,0 +1,7 @@
+DOMAIN,apps.lovense-api.com
+DOMAIN-KEYWORD,lovense-api
+DOMAIN-SUFFIX,lovense-api.com
+IP-CIDR,104.18.5.153/32,no-resolve
+IP-CIDR,104.18.4.153/32,no-resolve
+IP-CIDR,104.18.0.0/16,no-resolve
+DOMAIN-SUFFIX,cam101.com
