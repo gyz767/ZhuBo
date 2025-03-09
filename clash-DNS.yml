@@ -1,9 +1,11 @@
 port: 7890
 socks-port: 7891
+ipv6: true
+skip-proxy: '127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com', 169.254.0.0/16, 192.0.0.0/24, captive.apple.com, *.ccb.com, *.abchina.com.cn, *.psbc.com,www.baidu.com
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 0.0.0.0:9090
 sniffer:
   sniff:
     TLS: {ports: [1-65535], override-destination: true}
@@ -30,6 +32,10 @@ dns:
     - tls://dns.alidns.com:853
     - https://doh.pub:443/dns-query
     - https://dns.alidns.com:443/dns-query
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://120.53.53.53
+    - tls://1.12.12.12    
   fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
@@ -96,7 +102,9 @@ dns:
     - +.wowsgame.cn
     - +.wargaming.net
     - "*.*.*.srv.nintendo.net"
+    - "*.srv.nintendo.net"    
     - "*.*.stun.playstation.net"
+    - "*.stun.playstation.net"
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
     - "*.ipv6.microsoft.com"
@@ -110,3 +118,9 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
+    - xbox.*.microsoft.com
+    - "*.xboxlive.com"
+    - "*.teafone.com"
+    - "*.sktswe.net"
+    - rtc.goodfone.co.kr
+    - "*.chattti.com"
