@@ -1,7 +1,7 @@
 port: 7890
 socks-port: 7891
 ipv6: true
-skip-proxy: '127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com, 169.254.0.0/16, 192.0.0.0/24, captive.apple.com, *.ccb.com, *.abchina.com.cn, *.psbc.com,www.baidu.com'
+skip-proxy: '127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com'
 allow-lan: true
 mode: Rule
 log-level: info
