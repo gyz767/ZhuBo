@@ -1,28 +1,22 @@
 port: 7890
 socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
 ipv6: true
 skip-proxy: '127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com'
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-sniffer:
-  sniff:
-    TLS: {ports: [1-65535], override-destination: true}
-    HTTP: {ports: [1-65535], override-destination: true}
+profile:
+  tracing: true
+experimental:
+  sniff-tls-sni: true
   enable: true
-  skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
-  parse-pure-ip: true
-  force-dns-mapping: true
-  override-destination: true
 dns:
   ipv6: false
   enable: true
-  listen: 0.0.0.0:1053
-  use-hosts: false
-  fake-ip-range: 198.18.0.1/15
+  listen: 0.0.0.0:53
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
