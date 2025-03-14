@@ -22,3 +22,4 @@ IP-CIDR,2606:4700:58::/48,no-resolve
 IP-CIDR,2803:f800:50::/48,no-resolve
 IP-CIDR,104.18.5.0/24,no-resolve
 IP-CIDR,104.18.4.0/24,no-resolve
+IP-CIDR,154.31.114.74/32,no-resolve
