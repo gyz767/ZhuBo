@@ -7,10 +7,10 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 tunnels:
- -network: [tcp, udp]
+- network: [tcp, udp]
   address: 127.0.0.1:10030
   target: twbgp2.kkmm2024.top:10030
-  proxy: 深圳电信 HKG 01
+  proxy: 🇭🇰 HKG 01
 sniffer:
   sniff:
     TLS: {ports: [1-65535], override-destination: true}
