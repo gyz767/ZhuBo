@@ -13,6 +13,9 @@ profile:
 experimental:
   sniff-tls-sni: true
   enable: true
+geodata-mode: true
+geox-url:
+  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"  
 dns:
   ipv6: false
   enable: true
