@@ -1,7 +1,0 @@
-DOMAIN,streaming-rtmp.sinparty.com
-DOMAIN-KEYWORD,sinparty
-DOMAIN-SUFFIX,sinparty.com
-DOMAIN,dashboard.sinparty.com
-IP-CIDR,99.83.130.166/32,no-resolve
-IP-CIDR,13.248.244.104/32,no-resolve
-IP-CIDR,13.248.244.0/24,no-resolve
