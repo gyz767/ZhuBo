@@ -1,9 +1,0 @@
-DOMAIN,live.doppiocdn.com
-DOMAIN-KEYWORD,doppiocdn
-DOMAIN-KEYWORD,stripchat
-DOMAIN,zh.stripchat.com
-DOMAIN-SUFFIX,doppiocdn.com
-IP-CIDR,172.65.200.0/24,no-resolve
-IP-CIDR,2606:4700:90::/48,no-resolve
-IP-CIDR,217.19.2.0/24,no-resolve
-IP-CIDR,31.220.27.0/24,no-resolve
