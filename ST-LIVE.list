@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,stripchat
 DOMAIN,zh.stripchat.com
 DOMAIN-SUFFIX,doppiocdn.com
 IP-CIDR,172.65.200.5/32,no-resolve
+IP-CIDR,35.78.72.0/24,no-resolve
 IP-CIDR,104.17.117.12/32,no-resolve
 IP-CIDR,104.17.118.12/32,no-resolve
 IP-CIDR,35.77.201.98/32,no-resolve
