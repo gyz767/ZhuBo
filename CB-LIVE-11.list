@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,chaturbate
 DOMAIN-SUFFIX,chaturbate.com
 IP-CIDR,2001:df0:fd80:b00b::/64,no-resolve
 IP-CIDR,2401:bc40:e301::/48,no-resolve
+IP-CIDR,172.65.233.0/24,no-resolve
 IP-CIDR,103.141.147.0/24,no-resolve
 IP-CIDR,131.153.85.0/24,no-resolve
 IP-CIDR,131.153.84.0/24,no-resolve
