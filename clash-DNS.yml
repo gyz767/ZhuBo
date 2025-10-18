@@ -1,11 +1,10 @@
 port: 7890
 socks-port: 7891
-ipv6: true
-skip-proxy: '127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com'
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 0.0.0.0:9090
+external-controller: :9090
+unified-delay: true
 sniffer:
   sniff:
     TLS: {ports: [1-65535], override-destination: true}
@@ -14,7 +13,7 @@ sniffer:
   skip-domain:
     - Mijia Cloud
     - dlg.io.mi.com
-  parse-pure-ip: true
+  parse-pure-ip: false
   force-dns-mapping: true
   override-destination: true
 dns:
@@ -23,15 +22,15 @@ dns:
   listen: 0.0.0.0:1053
   use-hosts: false
   default-nameserver:
-    - 119.28.28.28
     - 119.29.29.29
     - 223.5.5.5
     - 223.6.6.6
+    - 8.8.4.4
+    - 8.8.8.8
   nameserver:
-    - tls://223.5.5.5:853
-    - tls://223.6.6.6:853
-    - tls://120.53.53.53
-    - tls://1.12.12.12    
+    - https://durable0762.com:44443/dns-query
+    - https://delirium9599.com:443/dns-query
+    - https://cf-cdn.delirium9599.com:443/dns-query
   fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
@@ -98,9 +97,7 @@ dns:
     - +.wowsgame.cn
     - +.wargaming.net
     - "*.*.*.srv.nintendo.net"
-    - "*.srv.nintendo.net"    
     - "*.*.stun.playstation.net"
-    - "*.stun.playstation.net"
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
     - "*.ipv6.microsoft.com"
@@ -114,9 +111,3 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
-    - xbox.*.microsoft.com
-    - "*.xboxlive.com"
-    - "*.teafone.com"
-    - "*.sktswe.net"
-    - rtc.goodfone.co.kr
-    - "*.chattti.com"
