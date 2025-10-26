@@ -8,7 +8,15 @@ IP-CIDR,5.159.216.0/24,no-resolve
 DOMAIN-SUFFIX,jasmin.com
 DOMAIN-SUFFIX,livejasmin.com
 PROCESS-NAME,x64-release-ngs-module-win32.exe
+PROCESS-NAME,x64-release-systeminfo-module-win32.exe
+PROCESS-NAME,x64-release-uimain-module-win32.exe
+PROCESS-NAME,x64-release-versionchecker-module-win32.exe
+PROCESS-NAME,x64-release-vibratoy-module-win32.exe
+PROCESS-NAME,x64-release-watchdog-module-win32.exe
+PROCESS-NAME,diagsender.exe
+PROCESS-NAME,JCam-main.exe
 PROCESS-NAME,JCam.exe
+PROCESS-NAME,start.exe
 IP-CIDR,109.71.162.174/32,no-resolve
 IP-CIDR,157.240.10.32/32,no-resolve
 IP-CIDR,154.85.102.30/32,no-resolve
