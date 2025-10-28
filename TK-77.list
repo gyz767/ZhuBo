@@ -55,6 +55,7 @@ DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,ttwebview.com
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
+USER-AGENT,TikTok*
 PROCESS-NAME,com.zhiliaoapp.musically
 PROCESS-NAME,TikTok LIVE Studio Launcher.exe
 PROCESS-NAME,AISDK_Server.exe
