@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
-header:
+headers:
   User-Agent:
   - "TikTok*"
 sniffer:
