@@ -5,9 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
-headers:
-  User-Agent:
-  - "TikTok*"
 sniffer:
   sniff:
     TLS: {ports: [1-65535], override-destination: true}
