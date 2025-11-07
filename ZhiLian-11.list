@@ -60,6 +60,7 @@ PROCESS-NAME,TencentMeeting.app
 PROCESS-NAME,QQ.app
 PROCESS-NAME,iFlytekIME.app
 PROCESS-NAME,ToDesk.app
+USER-AGENT,ToDesk*
 IP-CIDR,43.135.63.0/24,no-resolve
 PROCESS-NAME,iFlyIMELoader.exe
 PROCESS-NAME,BaiduNetdisk.exe
