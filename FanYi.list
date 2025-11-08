@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,lovense-api
 USER-AGENT,lovense*
 USER-AGENT,Lovense*
 USER-AGENT,Lovense Connect*
+USER-AGENT,LovenseConnect*
 DOMAIN-SUFFIX,lovense-api.com
 IP-CIDR,104.18.5.153/32,no-resolve
 IP-CIDR,104.18.4.153/32,no-resolve
