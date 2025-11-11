@@ -2,6 +2,7 @@ DOMAIN-SUFFIX,dditsadn.com
 DOMAIN-SUFFIX,dditscdn.com
 DOMAIN,cam.jasmin.com
 IP-CIDR,185.13.88.0/24,no-resolve
+IP-CIDR,95.128.123.18/32,no-resolve
 IP-CIDR,5.159.216.0/24,no-resolve
 IP-CIDR,109.71.161.0/24,no-resolve
 IP-CIDR,109.71.160.0/24,no-resolve
