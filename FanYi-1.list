@@ -1,3 +1,6 @@
+PROCESS-NAME,FinalShell.app
+IP-CIDR,5.5.5.5/32,no-resolve
+PROCESS-NAME,FinalShell
 IP-CIDR,154.31.114.74/32,no-resolve
 DOMAIN,apps.lovense-api.com
 DOMAIN-KEYWORD,lovense-api
