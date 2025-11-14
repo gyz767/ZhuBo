@@ -8,6 +8,7 @@ IP-CIDR,5.159.216.0/24,no-resolve
 IP-CIDR,109.71.161.0/24,no-resolve
 IP-CIDR,109.71.160.0/24,no-resolve
 IP-CIDR,5.159.216.0/24,no-resolve
+IP-CIDR,109.71.165.0/24,no-resolve
 DOMAIN-SUFFIX,jasmin.com
 DOMAIN-SUFFIX,livejasmin.com
 PROCESS-NAME,x64-release-ngs-module-win32.exe
