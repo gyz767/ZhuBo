@@ -22,13 +22,11 @@ dns:
   listen: 0.0.0.0:1053
   use-hosts: false
   default-nameserver:
-    - 119.29.29.29
     - 223.5.5.5
     - 223.6.6.6
+    - 119.29.29.29
     - 1.1.1.1
     - 1.0.0.1
-    - 8.8.4.4
-    - 8.8.8.8
   nameserver:
     - https://durable0762.com:44443/dns-query
     - https://delirium9599.com:443/dns-query
