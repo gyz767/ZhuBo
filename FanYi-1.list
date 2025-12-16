@@ -15,12 +15,9 @@ IP-CIDR,104.18.0.0/16,no-resolve
 DOMAIN-SUFFIX,cam101.com
 DOMAIN-KEYWORD,lovense-api
 DOMAIN-KEYWORD,immersivetranslate
-DOMAIN-SUFFIX,immersivetranslate.com
 DOMAIN-KEYWORD,googleapis
 DOMAIN-SUFFIX,immersivetranslate.com
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN-KEYWORD,kkmm2024
-DOMAIN-SUFFIX,kkmm2024.top
 IP-CIDR,182.201.240.0/24,no-resolve
 IP-CIDR,183.47.101.0/24,no-resolve
 IP-CIDR,183.47.104.0/24,no-resolve
