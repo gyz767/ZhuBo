@@ -189,3 +189,5 @@ DOMAIN-SUFFIX,cmpassport.com
 DOMAIN-SUFFIX,todesk.com
 DOMAIN-SUFFIX,kkmm2024.top
 DOMAIN,toy1.kkmm2024.top
+USER-AGENT,todesk*
+USER-AGENT,ToDesk*
