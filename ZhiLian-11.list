@@ -183,7 +183,9 @@ IP-CIDR,115.27.49.0/24,no-resolve
 IP-CIDR,43.139.61.0/24,no-resolve
 IP-CIDR,39.171.154.0/24,no-resolve
 IP-CIDR,134.175.254.0/24,no-resolve
-HOST-SUFFIX,cl2m.cn
-HOST-SUFFIX,cl2009.com
-HOST-SUFFIX,cmpassport.com
-HOST-SUFFIX,todesk.com
+DOMAIN-SUFFIX,cl2m.cn
+DOMAIN-SUFFIX,cl2009.com
+DOMAIN-SUFFIX,cmpassport.com
+DOMAIN-SUFFIX,todesk.com
+DOMAIN-SUFFIX,kkmm2024.top
+DOMAIN,toy1.kkmm2024.top
