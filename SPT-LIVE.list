@@ -1,6 +1,6 @@
 DOMAIN,golive.streamparty.online
 DOMAIN,dashboard.sinparty.com
-DOMAIN,streamparty.online
+DOMAIN-SUFFIX,streamparty.online
 DOMAIN-KEYWORD,streamparty
 DOMAIN-SUFFIX,sinparty.com
 IP-CIDR,208.74.148.196/32,no-resolve
@@ -14,3 +14,7 @@ IP-CIDR,52.15.170.198/32,no-resolve
 IP-CIDR,3.18.138.58/32,no-resolve
 IP-CIDR,3.21.150.137/32,no-resolve
 IP-CIDR,3.147.170.188/32,no-resolve
+
+###########直播推流密钥##############
+IP-CIDR,166.117.31.97/32,no-resolve
+IP-CIDR,166.117.230.183/32,no-resolve
