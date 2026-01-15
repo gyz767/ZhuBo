@@ -7,6 +7,9 @@ DOMAIN-KEYWORD,streamate
 
 ####################直播推流密钥##########IP###############
 
+IP-CIDR,207.66.134.0/24,no-resolve
+IP-CIDR,216.127.49.116/32,no-resolve
+IP-CIDR,216.127.49.0/24,no-resolve
 IP-CIDR,216.127.53.0/24,no-resolve
 DOMAIN,turn.icf-prod-sound.generflow.com
 DOMAIN-KEYWORD,generflow
