@@ -1,10 +1,6 @@
 DOMAIN,origins.streamray.com
 DOMAIN-KEYWORD,streamray
 DOMAIN-KEYWORD,cams
-IP-CIDR,69.165.0.0/16,no-resolve
-IP-CIDR,69.0.0.0/8,no-resolve
 DOMAIN-SUFFIX,streamray.com
 DOMAIN-SUFFIX,cams.run
 DOMAIN-SUFFIX,prod.cams
-IP-CIDR,204.74.0.0/16,no-resolve
-IP-CIDR,199.7.0.0/16,no-resolve
