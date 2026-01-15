@@ -1,6 +1,13 @@
+############全球超过 150 个 PoP 点
 DOMAIN,global.live.mmcdn.com
 DOMAIN,zh-hans.chaturbate.com
 DOMAIN,chaturbate.com
 DOMAIN-SUFFIX,mmcdn.com
 DOMAIN-KEYWORD,chaturbate
 DOMAIN-SUFFIX,chaturbate.com
+IP-CIDR,172.65.233.184/32,no-resolve
+#############全球超过 15 个 PoP 点###IP
+IP-CIDR,172.65.233.184/32,no-resolve
+IP-CIDR,172.65.233.184/32,no-resolve
+IP-CIDR,172.65.233.184/32,no-resolve
+IP-CIDR,172.65.233.184/32,no-resolve
