@@ -19,6 +19,14 @@ DOMAIN-SUFFIX,naiadsystems.com
 DOMAIN,performer-room.naiadsystems.com
 DOMAIN,sfu-sea1-10.naiadsystems.com
 
+
+#######################直播推流密钥-2################2####################
+IP-CIDR,142.250.196.0/24,no-resolve
+IP-CIDR,142.250.197.0/24,no-resolve
+IP-CIDR,142.250.198.0/24,no-resolve
+IP-CIDR,207.66.133.0/24,no-resolve
+IP-CIDR,207.66.153.0/24,no-resolve
+
 #############直播网址IP##################
 IP-CIDR,207.246.147.123/32,no-resolve
 IP-CIDR,207.246.147.122/32,no-resolve
@@ -123,3 +131,4 @@ IP-CIDR,128.242.245.244/32,no-resolve
 IP-CIDR,52.58.1.161/32,no-resolve
 IP-CIDR,157.240.16.50/32,no-resolve
 IP-CIDR,173.244.209.150/32,no-resolve
+###############################################
