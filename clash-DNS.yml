@@ -25,12 +25,10 @@ dns:
     - 223.5.5.5
     - 223.6.6.6
     - 119.29.29.29
+  dns-fallback:
+    - 8.8.8.8
     - 1.1.1.1
-    - 1.0.0.1
-  nameserver:
-    - https://durable0762.com:44443/dns-query
-    - https://delirium9599.com:443/dns-query
-    - https://cf-cdn.delirium9599.com:443/dns-query
+    - tcp://8.8.8.8
   fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
