@@ -20,6 +20,8 @@ dns:
   ipv6: false
   enable: true
   listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   use-hosts: false
   nameserver-policy:
    "geosite:cn":
@@ -30,7 +32,6 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - tcp://8.8.8.8
-  fake-ip-range: 198.18.0.1/15
   fallback-filter:
     geoip: true
     geoip-code: CN
