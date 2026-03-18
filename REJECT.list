@@ -1,2 +1,9 @@
+  # --- 屏蔽 Apple 系统定位 (iOS 必备) ---
 DOMAIN,gs-loc.apple.com
+  
+  # --- 屏蔽 Google 定位服务 (Android 必备) ---
 DOMAIN,location.googleapis.com
+  
+  # --- 屏蔽 WebRTC 探测 (防止泄露内网真实 IP) ---
+DOMAIN,stun.l.google.com
+DOMAIN-KEYWORD,stun
