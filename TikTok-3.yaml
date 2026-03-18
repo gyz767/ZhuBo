@@ -21,15 +21,21 @@ dns:
   enable: true
   listen: 0.0.0.0:1053
   use-hosts: false
-  default-nameserver:
+  nameserver-policy:
+   "geosite:cn":
     - 223.5.5.5
     - 223.6.6.6
     - 119.29.29.29
-  dns-fallback:
+  default-nameserver:
     - 8.8.8.8
     - 1.1.1.1
     - tcp://8.8.8.8
   fake-ip-range: 198.18.0.1/15
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+     - gfw
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
