@@ -266,4 +266,4 @@ rule-providers:
 
     geosite:
       - gfw
-clash_rule_base=https://raw.githubusercontent.com/gyz767/ZhuBo/refs/heads/main/clash-DNS.yml
+clash_rule_base=https://raw.githubusercontent.com/gyz767/ZhuBo/refs/heads/main/DNS.yml
