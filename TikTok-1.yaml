@@ -1,3 +1,20 @@
+dns:
+  nameserver-policy:
+    "geosite:cn":
+      - 223.5.5.5
+      - 119.29.29.29
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - https://dns.google/dns-query#🚀 节点选择
+    - https://mozilla.cloudflare-dns.com/dns-query#🚀 节点选择
+    - 1.1.1.1#🚀 节点选择
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
 proxy-providers:
   tzvkfmabrxko:
     type: http
@@ -8,7 +25,6 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 900
-
 proxy-providers-config:
   proxy-providers-use: &proxy-providers-use
     - tzvkfmabrxko
@@ -282,22 +298,6 @@ rule-providers:
     <<: *ip
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
 
-dns:
-  nameserver-policy:
-    "geosite:cn":
-      - 223.5.5.5
-      - 119.29.29.29
-  enable: true
-  listen: 0.0.0.0:53
-  default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-  nameserver:
-    - https://dns.google/dns-query#🚀 节点选择
-    - https://mozilla.cloudflare-dns.com/dns-query#🚀 节点选择
-    - 1.1.1.1#🚀 节点选择
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
+
     geosite:
       - gfw
