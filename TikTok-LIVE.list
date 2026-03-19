@@ -54,9 +54,9 @@ PROCESS-NAME,parfait_crash_handler.exe
 USER-AGENT,TikTok*
 USER-AGENT,AWEME*
 USER-AGENT,musical.ly*
-IP-ASN,138699
-IP-ASN,21206
-IP-ASN,396986
+IP-ASN,138699,no-resolve
+IP-ASN,21206,no-resolve
+IP-ASN,396986,no-resolve
 DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,pitaya-clientai.com
 DOMAIN-SUFFIX,app-analytics-services.com
