@@ -1,3 +1,9 @@
+USER-AGENT,Binance*
+USER-AGENT,BNB*
+USER-AGENT,Binance Helper*
+IP-ASN,16509
+IP-ASN,14618
+IP-ASN,8987
 DOMAIN-SUFFIX,appsflayer.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
@@ -10,5 +16,33 @@ DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,saasexch.cc
 DOMAIN-SUFFIX,saasexch.com
-USER-AGENT,Binance*
-USER-AGENT,Binance Helper*
+# --- Binance 规则集 ---
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,bnapp.me
+DOMAIN-SUFFIX,binance.gg
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,binance.watch
+DOMAIN-SUFFIX,binances.com
+DOMAIN-SUFFIX,saasexch.com
+# API 专用域名
+DOMAIN,api.binance.com
+DOMAIN,api1.binance.com
+DOMAIN,api2.binance.com
+DOMAIN,api3.binance.com
+DOMAIN,api4.binance.com
+DOMAIN,fapi.binance.com
+DOMAIN,dapi.binance.com
+# 常见的币安相关节点/服务 IP 段
+IP-CIDR,13.213.195.58/32,Proxy
+IP-CIDR,52.220.91.198/32,Proxy
+IP-CIDR,18.136.143.102/32,Proxy
+# 如果需要完全覆盖 AWS 某些特定集群（可选）
+IP-CIDR,54.169.0.0/16
