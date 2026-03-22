@@ -1,0 +1,15 @@
+DOMAIN,origin.cam4.com
+DOMAIN-SUFFIX,cam4.com
+DOMAIN-KEYWORD,cam4
+IP-CIDR,5.254.101.162/32,no-resolve
+IP-CIDR,5.254.101.167/32,no-resolve
+IP-CIDR,5.254.101.163/32,no-resolve
+IP-CIDR,5.254.101.169/32,no-resolve
+IP-CIDR,5.254.101.168/32,no-resolve
+IP-CIDR,99.192.221.75/32,no-resolve
+IP-CIDR,99.192.221.78/32,no-resolve
+IP-CIDR,99.192.221.74/32,no-resolve
+IP-CIDR,99.192.221.76/32,no-resolve
+IP-CIDR,217.22.25.180/32,no-resolve
+IP-CIDR,99.192.221.70/32,no-resolve
+IP-CIDR,217.22.25.182/32,no-resolve
