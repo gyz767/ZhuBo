@@ -1,6 +1,9 @@
 DOMAIN,origin.cam4.com
+DOMAIN,cam4-hls.xcdnpro.com
 DOMAIN-SUFFIX,cam4.com
+DOMAIN-SUFFIX,xcdnpro.com
 DOMAIN-KEYWORD,cam4
+DOMAIN-KEYWORD,xcdnpro
 IP-CIDR,5.254.101.162/32,no-resolve
 IP-CIDR,5.254.101.167/32,no-resolve
 IP-CIDR,5.254.101.163/32,no-resolve
@@ -13,3 +16,5 @@ IP-CIDR,99.192.221.76/32,no-resolve
 IP-CIDR,217.22.25.180/32,no-resolve
 IP-CIDR,99.192.221.70/32,no-resolve
 IP-CIDR,217.22.25.182/32,no-resolve
+IP-CIDR,185.94.239.64/32,no-resolve
+IP-CIDR,184.94.152.0/32,no-resolve
