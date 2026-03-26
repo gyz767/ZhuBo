@@ -5,6 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
+# 1. 新增 TUN 模式配置（针对直播 MTU 优化）
+tun:
+  enable: true
+  stack: system          # 系统级堆栈，延迟更低
+  auto-route: true       # 自动设置全局路由
+  auto-detect-interface: true # 自动检测网卡，防止回环
+  dns-hijack:
+    - any:53             # 劫持所有 DNS 请求
+  mtu: 1380              # 核心优化：预留 120 字节给 Trojan/TLS 封装，防止直播切片丢包
+  strict-route: true     # 严格路由，确保流量不泄露
+
+# 2. 流量嗅探配置
 sniffer:
   sniff:
     TLS: {ports: [1-65535], override-destination: true}
@@ -16,6 +28,8 @@ sniffer:
   parse-pure-ip: false
   force-dns-mapping: true
   override-destination: true
+
+# 3. DNS 配置  
 dns:
   ipv6: false
   enable: true
