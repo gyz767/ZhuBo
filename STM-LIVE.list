@@ -1,18 +1,24 @@
+PROCESS-NAME,chrome.exe
+USER-AGENT,*Streamate*
+USER-AGENT,*Chrome*
+  # Amazon Data Services (许多多媒体节点托管于此)
+IP-ASN,16509,no-resolve
+IP-ASN,14618,no-resolve
+  # Cloudflare (用于前端加速和安全防护)
+IP-ASN,13335,no-resolve
+  # 如果遇到特定归属地段，可手动锁定
+IP-CIDR,54.0.0.0/8,no-resolve
 DOMAIN,performerclient.streamatemodels.com
 DOMAIN-SUFFIX,streamatemodels.com
 DOMAIN-KEYWORD,streamatemodels
 DOMAIN,www.streamate.com
 DOMAIN-SUFFIX,streamate.com
 DOMAIN-KEYWORD,streamate
-
 # Streamate 模特后台与推流域名
+DOMAIN-SUFFIX,pcr.streamate.com
 
-DOMAIN-SUFFIX,pcr.streamate.com,🎥 直播专用
-
-  
   # 如果使用 Web 模式，可能涉及到的多媒体传输域名
 DOMAIN-SUFFIX,sm-cdn.com
-
 
 # Streamate 模特直播 Web 模式域名列表
 
@@ -40,7 +46,13 @@ DOMAIN-SUFFIX,edgecastcdn.net
   # --- WebRTC 穿透服务 (STUN/TURN) ---
 DOMAIN-SUFFIX,stun.l.google.com
 DOMAIN-SUFFIX,stun.services.mozilla.com
-
+DOMAIN-SUFFIX,smstatic.com
+DOMAIN-SUFFIX,awempire.com
+  
+  # 常见的 WebRTC 信令与分发子域名
+DOMAIN-KEYWORD,video-sm
+DOMAIN-KEYWORD,chat-sm
+DOMAIN-KEYWORD,node-sm
 ####################直播推流密钥##########IP###############
 
 IP-CIDR,207.66.134.0/24,no-resolve
