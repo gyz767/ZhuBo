@@ -53,6 +53,9 @@ DOMAIN-SUFFIX,awempire.com
 DOMAIN-KEYWORD,video-sm
 DOMAIN-KEYWORD,chat-sm
 DOMAIN-KEYWORD,node-sm
+# 兜底规则
+
+DEST-PORT,3478
 ####################直播推流密钥##########IP###############
 
 IP-CIDR,207.66.134.0/24,no-resolve
