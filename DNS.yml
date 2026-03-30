@@ -41,12 +41,10 @@ dns:
    "geosite:cn":
     - 119.29.29.29
     - 223.5.5.5
-    - https://doh.pub/dns-query
   default-nameserver:
-    - https://1.1.1.1/dns-query 
-    - https://8.8.8.8/dns-query
     - 1.1.1.1
-    - tcp://8.8.8.8
+    - 8.8.8.8
+    - 1.0.0.1
   fallback-filter:
     geoip: true
     geoip-code: CN
