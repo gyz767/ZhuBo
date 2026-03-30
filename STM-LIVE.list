@@ -13,6 +13,35 @@ DOMAIN-SUFFIX,pcr.streamate.com,🎥 直播专用
   # 如果使用 Web 模式，可能涉及到的多媒体传输域名
 DOMAIN-SUFFIX,sm-cdn.com
 
+
+# Streamate 模特直播 Web 模式域名列表
+
+  # --- 核心业务与信令 ---
+DOMAIN-SUFFIX,streamate.com
+DOMAIN-SUFFIX,streamatemodels.com
+DOMAIN-SUFFIX,smcloud.net
+DOMAIN-SUFFIX,smconnect.com
+  
+  # --- 视频流媒体传输 (WebRTC/WSS) ---
+DOMAIN-KEYWORD,video.streamate
+DOMAIN-KEYWORD,media.streamate
+DOMAIN-SUFFIX,smcontent.com
+  
+  # --- 实时消息与交互 (聊天/礼物) ---
+DOMAIN-KEYWORD,pubsub
+DOMAIN-SUFFIX,pubnub.com
+DOMAIN-SUFFIX,pusher.com
+
+  # --- 静态资源与加速 (CDN) ---
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,edgecastcdn.net
+
+  # --- WebRTC 穿透服务 (STUN/TURN) ---
+DOMAIN-SUFFIX,stun.l.google.com
+DOMAIN-SUFFIX,stun.services.mozilla.com
+
 ####################直播推流密钥##########IP###############
 
 IP-CIDR,207.66.134.0/24,no-resolve
