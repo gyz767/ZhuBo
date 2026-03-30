@@ -17,8 +17,7 @@ DOMAIN-SUFFIX,sm-cdn.com
 # Streamate 模特直播 Web 模式域名列表
 
   # --- 核心业务与信令 ---
-DOMAIN-SUFFIX,streamate.com
-DOMAIN-SUFFIX,streamatemodels.com
+
 DOMAIN-SUFFIX,smcloud.net
 DOMAIN-SUFFIX,smconnect.com
   
