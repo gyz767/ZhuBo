@@ -34,15 +34,22 @@ dns:
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: false
+  default-nameserver:
+    - 223.5.5.5
+    - 223.6.6.6 
+    - 119.29.29.29
+  nameserver:
+    - 1.1.1.1
+    - https://1.1.1.1/dns-query     # Cloudflare 主 DoH
+    - https://1.0.0.1/dns-query     # Cloudflare 备 DoH
+    - https://dns.google/dns-query  # Google DoH (备选)
+    - https://dns.alidns.com/resolve # 阿里 DoH (国内加速)    
   nameserver-policy:
    "geosite:cn":
     - 119.29.29.29
     - 223.5.5.5
-  default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 1.0.0.1
+  "geosite:tiktok,youtube":
+    - https://1.1.1.1/dns-query    
   fallback-filter:
     geoip: true
     geoip-code: CN
