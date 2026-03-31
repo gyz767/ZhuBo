@@ -129,3 +129,12 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
+    - 'localhost.ptlogin2.qq.com'
+    - '+.res.netease.com'
+    - '+.music.126.net'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - 'msftconnecttest.com'
+    - 'geosite:cn' # 重点：过滤所有中国域名（需配配合 geo-site 数据库）
