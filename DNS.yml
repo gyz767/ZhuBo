@@ -35,6 +35,8 @@ dns:
     - 223.6.6.6
     - 119.29.29.29
   nameserver:
+    - 223.5.5.5          # 阿里云 (优先国内解析)
+    - 119.29.29.29       # 腾讯云  
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
     - https://dns.google/dns-query
