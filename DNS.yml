@@ -44,11 +44,11 @@ dns:
     - https://dns.google/dns-query  # Google DoH (备选)
     - https://dns.alidns.com/resolve # 阿里 DoH (国内加速)    
   nameserver-policy:
-  "geosite:cn":
-    - 119.29.29.29
-    - 223.5.5.5
-  "geosite:tiktok,youtube":
-    - https://1.1.1.1/dns-query
+    "geosite:cn":
+      - 223.5.5.5
+      - 119.29.29.29
+    "geosite:tiktok,youtube":
+      - https://1.1.1.1/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
