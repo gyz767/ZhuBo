@@ -27,7 +27,7 @@ tun:
 dns:
   enable: true
   ipv6: false
-  listen: 0.0.0.0:53
+  listen: 0.0.0.0:1053
   fake-ip-filter:
     - "*.lan"
     - "*.srv.nintendo.net"
