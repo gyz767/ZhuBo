@@ -23,7 +23,7 @@ tun:
     - any:53              # 劫持所有 53 端口流量到 Clash DNS
   auto-route: true        # 自动设置系统路由，使流量进入 TUN 网卡
   auto-detect-interface: true # 自动检测物理网卡，防止环路
-  mtu: 1500  
+  mtu: 1380
 dns:
   enable: true
   ipv6: false
