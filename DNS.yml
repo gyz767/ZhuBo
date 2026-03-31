@@ -2,7 +2,7 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-allow-lan: false
+allow-lan: true
 unified-delay: true
 mode: rule
 log-level: info
@@ -14,6 +14,16 @@ profile:
   tracing: true
 experimental:
   sniff-tls-sni: true
+# TUN 模式配置 (全虚拟网卡接管)
+#---------------------------------------------------#
+tun:
+  enable: true
+  stack: system           # 建议 Windows 用户使用 system，mac/linux 可选 gvisor
+  dns-hijack:
+    - any:53              # 劫持所有 53 端口流量到 Clash DNS
+  auto-route: true        # 自动设置系统路由，使流量进入 TUN 网卡
+  auto-detect-interface: true # 自动检测物理网卡，防止环路
+  mtu: 1500  
 dns:
   enable: true
   ipv6: false
