@@ -9,12 +9,10 @@ unified-delay: true
 tun:
   enable: true
   stack: system          # 系统级堆栈，延迟更低
+  mtu: 1380              # 核心优化：预留 120 字节给 Trojan/TLS 封装，防止直播切片丢包  
+  strict-route: true     # 严格路由，确保流量不泄露  
   auto-route: true       # 自动设置全局路由
   auto-detect-interface: true # 自动检测网卡，防止回环
-  dns-hijack:
-    - any:53             # 劫持所有 DNS 请求
-  mtu: 1380              # 核心优化：预留 120 字节给 Trojan/TLS 封装，防止直播切片丢包
-  strict-route: true     # 严格路由，确保流量不泄露
   udp: true
 # 2. 流量嗅探配置
 sniffer:
