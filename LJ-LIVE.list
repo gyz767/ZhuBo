@@ -11,6 +11,9 @@ PROCESS-NAME,diagsender.exe
 DOMAIN-SUFFIX,dditsadn.com
 DOMAIN-SUFFIX,dditscdn.com
 DOMAIN,cam.jasmin.com
+DOMAIN-SUFFIX,awmdm.com            # 极其重要：这是其核心流媒体 CDN 域名
+DOMAIN-SUFFIX,pscp.tv              # 部分老旧流可能关联的推流服务
+DOMAIN-KEYWORD,livejasmin
 IP-CIDR,185.13.88.0/24,no-resolve
 IP-CIDR,95.128.123.18/32,no-resolve
 IP-CIDR,95.128.123.0/24,no-resolve
