@@ -63,7 +63,11 @@ dns:
     - "*.local"
     - "*.home.arpa"
     - "localhost.ptlogin2.qq.com"
-
+    
+    # 远程软件Todesk
+    - '+.todesk.com'
+    - 'todesk.com'
+    
     # NTP 时间同步（防止时间校准失败）
     - "time.*.com"
     - "time.*.gov"
