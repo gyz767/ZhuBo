@@ -136,7 +136,7 @@ dns:
     - "+.res.netease.com"
 
     # Streamate Web 模式域名解析
-    - "*.generflow.com"
+   #################### - "*.generflow.com"
     
     # ---  TikTok 业务与推流 (最高优先级) ---
     # 确保所有 TikTok 相关域名和 CDN 强制走专用节点
@@ -145,33 +145,33 @@ dns:
     - "rtmp.tiktok.com"    
 
     # ---  CB 业务与推流 (最高优先级) ---  
-    - '*.mmcdn.com'  
-    - 'global.live.mmcdn.com'
+   #################### - '*.mmcdn.com'  
+  ####################  - 'global.live.mmcdn.com'
 
     # ---  ST 业务与推流 (最高优先级) ---  
-    - '*.strpst.com'      # 这是非常关键的 CDN 域名
-    - '*.doppiocdn.com'
-    - 'live.doppiocdn.com'
+   #################### - '*.strpst.com'      # 这是非常关键的 CDN 域名
+   #################### - '*.doppiocdn.com'
+  ####################  - 'live.doppiocdn.com'
 
     # ---  BG 业务与推流 (最高优先级) --- 
-    - 'z-us.origin.gnsbc.com'
-    - '*.gnsbc.com'
+ ####################   - 'z-us.origin.gnsbc.com'
+   #################### - '*.gnsbc.com'
     
     # ---  LJ 业务与推流 (最高优先级) --- 
-    - '*.awmdm.com'
-    - 'awmdm.com'
-    - '*.jasmin.com'   
-    - 'static-cdn.jcdn.ws'  # JCam 更新和静态资源域名
+  ####################  - '*.awmdm.com'
+   #################### - 'awmdm.com'
+    ####################- '*.jasmin.com'   
+    ####################- 'static-cdn.jcdn.ws'  # JCam 更新和静态资源域名
 
     # ---  C4 业务与推流 (最高优先级) --- 
-    - 'origin.cam4.com'     # 针对你这条具体的推流地址
-    - 'stream*.cam4.com'
+    ####################- 'origin.cam4.com'     # 针对你这条具体的推流地址
+  ####################  - 'stream*.cam4.com'
     
 
     # ---  SPT 业务与推流 (最高优先级) --- 
-    - 'golive.streamparty.online'
-    - '*.streamparty.online'
-    - 'streamparty.online'
+    ####################- 'golive.streamparty.online'
+   #################### - '*.streamparty.online'
+   #################### - 'streamparty.online'
 
     # 地理位置过滤
     - 'geosite:cn' # 重点：过滤所有中国域名（需配配合 geo-site 数据库）
