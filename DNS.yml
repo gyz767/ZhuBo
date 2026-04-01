@@ -150,15 +150,15 @@ dns:
    #################### - '*.gnsbc.com'
     
     # ---  LJ 业务与推流 (最高优先级) --- 
-    - '*.awmdm.com'
-    - 'awmdm.com'
-    - '*.jasmin.com'   
-    - 'static-cdn.jcdn.ws'  
-    - '+.jasmin.com'
-    - '+.livejasmin.com'
-    - '+.pscp.tv'       
-    - '+.stun.l.google.com' 
-    - 'stun.*'
+        # - '*.awmdm.com'
+       #  - 'awmdm.com'
+       #  - '*.jasmin.com'   
+       #  - 'static-cdn.jcdn.ws'  
+      #   - '+.jasmin.com'
+      #   - '+.livejasmin.com'
+      #   - '+.pscp.tv'       
+       #  - '+.stun.l.google.com' 
+      #   - 'stun.*'
     # ---  C4 业务与推流 (最高优先级) --- 
     ####################- 'origin.cam4.com'     # 针对你这条具体的推流地址
   ####################  - 'stream*.cam4.com'
