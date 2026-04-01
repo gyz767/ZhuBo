@@ -86,14 +86,14 @@ dns:
     - "*.ipv6.microsoft.com"
 
     # STUN 与 P2P (解决游戏 NAT 类型问题)
-    - "stun.*.*"
-    - "stun.*.*.*"
-    - "+.srv.nintendo.net"
-    - "+.stun.playstation.net"
-    - "xbox.*.*.microsoft.com"
-    - "*.*.xboxlive.com"
-    - "teredo.*.*.*"
-    - "teredo.*.*"
+    #################### - "stun.*.*"
+     ####################- "stun.*.*.*"
+    #################### - "+.srv.nintendo.net"
+    #################### - "+.stun.playstation.net"
+    #################### - "xbox.*.*.microsoft.com"
+    #################### - "*.*.xboxlive.com"
+    #################### - "teredo.*.*.*"
+    #################### - "teredo.*.*"
     - "speedtest.cros.wr.pvp.net"
 
     # 游戏服务
