@@ -137,7 +137,6 @@ dns:
 
     # Streamate Web 模式域名解析
     - "*.generflow.com"
-    - "*.streamatemodels.com"    
     
     # ---  TikTok 业务与推流 (最高优先级) ---
     # 确保所有 TikTok 相关域名和 CDN 强制走专用节点
