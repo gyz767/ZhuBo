@@ -1,7 +1,7 @@
+DOMAIN-KEYWORD,stun
 DOMAIN-SUFFIX,generflow.com
 DOMAIN,turn.icf-prod-sound.generflow.com
 DOMAIN-KEYWORD,generflow
-
 USER-AGENT,*Streamate*
 USER-AGENT,*Chrome*
   # Amazon Data Services (许多多媒体节点托管于此)
