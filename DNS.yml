@@ -7,7 +7,7 @@ external-controller: :9090
 unified-delay: true
 tun:
   enable: true
-  stack: system
+  stack: gvisor
   mtu: 1380
   strict-route: true
   auto-route: true
