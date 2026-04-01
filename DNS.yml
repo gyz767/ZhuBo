@@ -145,5 +145,54 @@ dns:
     - "*.byteoversea.com"
     - "rtmp.tiktok.com"    
 
+    # ---  CB 业务与推流 (最高优先级) ---  
+    - '*.chaturbate.com'
+    - 'chaturbate.com'
+    - '*.mmcdn.com'  
+    - 'global.live.mmcdn.com'
+
+    # ---  ST 业务与推流 (最高优先级) ---  
+    - '*.stripchat.com'
+    - 'stripchat.com'
+    - '*.strpst.com'  # 这是 Stripchat 非常关键的 CDN 域名
+    - '*.doppiocdn.com'
+    - 'live.doppiocdn.com'
+
+    # ---  BG 业务与推流 (最高优先级) --- 
+    - '*.bongamodels.com'
+    - '*.bongacams.com'
+    - '*.bngprm.com'
+    - '*.bonga.com'
+    - 'z-us.origin.gnsbc.com'
+    - '*.gnsbc.com'
+    
+    # ---  LJ 业务与推流 (最高优先级) --- 
+    - '*.livejasmin.com'
+    - 'livejasmin.com'
+    - '*.awmdm.com'
+    - 'awmdm.com'
+    - '*.jasmin.com'
+    - 'jcam.livejasmin.com'   
+    - 'static-cdn.jcdn.ws'  # JCam 更新和静态资源域名
+
+    # ---  C4 业务与推流 (最高优先级) --- 
+    - '*.cam4.com'           # 涵盖所有 CAM4 子域名
+    - 'cam4.com'
+    - '*.cam4.com.cdn.cloudflare.net'      # Cloudflare 节点优化
+    - '*.c4assets.com'                     # 关键：CAM4 的静态资源域名
+    - '*.cam4static.com'
+    - '*.cam4.io'                          # 部分新版 API 域
+    - 'origin.cam4.com'     # 针对你这条具体的推流地址
+    - 'stream*.cam4.com'
+    
+
+    # ---  SPT 业务与推流 (最高优先级) --- 
+    - '*.sinparty.com'
+    - 'sinparty.com'
+    - '*.sinparty.com.cdn.cloudflare.net' # 确保通过 Cloudflare 边缘节点加速    
+    - 'golive.streamparty.online'
+    - '*.streamparty.online'
+    - 'streamparty.online'
+
     # 地理位置过滤
     - 'geosite:cn' # 重点：过滤所有中国域名（需配配合 geo-site 数据库）
