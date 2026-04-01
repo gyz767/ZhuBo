@@ -176,12 +176,6 @@ dns:
     - 'static-cdn.jcdn.ws'  # JCam 更新和静态资源域名
 
     # ---  C4 业务与推流 (最高优先级) --- 
-    - '*.cam4.com'           # 涵盖所有 CAM4 子域名
-    - 'cam4.com'
-    - '*.cam4.com.cdn.cloudflare.net'      # Cloudflare 节点优化
-    - '*.c4assets.com'                     # 关键：CAM4 的静态资源域名
-    - '*.cam4static.com'
-    - '*.cam4.io'                          # 部分新版 API 域
     - 'origin.cam4.com'     # 针对你这条具体的推流地址
     - 'stream*.cam4.com'
     
