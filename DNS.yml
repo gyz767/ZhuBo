@@ -80,9 +80,9 @@ dns:
     # 系统服务与连接检测 (Apple/Microsoft)
     - "swscan.apple.com"
     - "mesu.apple.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "msftconnecttest.com"
+    ####################- "+.msftconnecttest.com"
+   #################### - "+.msftncsi.com"
+    ####################- "msftconnecttest.com"
     - "*.ipv6.microsoft.com"
 
     # STUN 与 P2P (解决游戏 NAT 类型问题)
