@@ -13,18 +13,15 @@ DOMAIN-SUFFIX,dditscdn.com
 DOMAIN,cam.jasmin.com
 DOMAIN-SUFFIX,jcdn.ws
 DOMAIN-KEYWORD,livejasmin
-IP-CIDR,185.13.88.0/24,no-resolve
-IP-CIDR,95.128.123.18/32,no-resolve
-IP-CIDR,95.128.123.0/24,no-resolve
-IP-CIDR,5.159.216.0/24,no-resolve
-IP-CIDR,109.71.161.0/24,no-resolve
-IP-CIDR,109.71.160.0/24,no-resolve
-IP-CIDR,5.159.216.0/24,no-resolve
-IP-CIDR,109.71.165.0/24,no-resolve
 DOMAIN-SUFFIX,jasmin.com
 DOMAIN-SUFFIX,livejasmin.com
 
-
+IP-CIDR,5.159.216.0/24,no-resolve
+IP-CIDR,185.13.88.0/24,no-resolve
+IP-CIDR,95.128.123.0/24,no-resolve
+IP-CIDR,109.71.160.0/24,no-resolve
+IP-CIDR,109.71.161.0/24,no-resolve
+IP-CIDR,109.71.165.0/24,no-resolve
 IP-CIDR,109.71.162.174/32,no-resolve
 IP-CIDR,157.240.10.32/32,no-resolve
 IP-CIDR,154.85.102.30/32,no-resolve
@@ -118,7 +115,6 @@ IP-CIDR,199.96.58.85/32,no-resolve
 IP-CIDR,104.244.46.93/32,no-resolve
 IP-CIDR,108.160.163.102/32,no-resolve
 IP-CIDR,202.182.98.125/32,no-resolve
-IP-CIDR,109.71.161.200/32,no-resolve
 IP-CIDR,31.13.85.53/32,no-resolve
 IP-CIDR,162.125.18.129/32,no-resolve
 IP-CIDR,162.125.1.8/32,no-resolve
@@ -128,6 +124,5 @@ IP-CIDR,159.138.20.20/32,no-resolve
 IP-CIDR,31.13.67.33/32,no-resolve
 IP-CIDR,199.96.58.105/32,no-resolve
 IP-CIDR,31.13.90.19/32,no-resolve
-IP-CIDR,128.242.240.221/32,no-resolve
 IP-CIDR,31.13.83.34/32,no-resolve
 IP-CIDR,103.39.76.66/32,no-resolve
