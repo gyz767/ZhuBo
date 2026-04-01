@@ -138,6 +138,12 @@ dns:
     # Streamate Web 模式域名解析
     - "*.generflow.com"
     - "*.streamatemodels.com"    
+    
+    # ---  TikTok 业务与推流 (最高优先级) ---
+    # 确保所有 TikTok 相关域名和 CDN 强制走专用节点
+    - "*.tiktokcdn.com"
+    - "*.byteoversea.com"
+    - "rtmp.tiktok.com"    
 
     # 地理位置过滤
     - 'geosite:cn' # 重点：过滤所有中国域名（需配配合 geo-site 数据库）
