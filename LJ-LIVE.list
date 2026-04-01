@@ -7,11 +7,7 @@ PROCESS-NAME,x64-release-uimain-module-win32.exe
 PROCESS-NAME,x64-release-versionchecker-module-win32.exe
 PROCESS-NAME,x64-release-vibratoy-module-win32.exe
 PROCESS-NAME,x64-release-watchdog-module-win32.exe
-PROCESS-NAME,diagsender.exe
-DOMAIN-SUFFIX,dditsadn.com
-DOMAIN-SUFFIX,dditscdn.com
 DOMAIN,cam.jasmin.com
-DOMAIN-SUFFIX,jcdn.ws
 DOMAIN-KEYWORD,livejasmin
 DOMAIN-SUFFIX,jasmin.com
 DOMAIN-SUFFIX,livejasmin.com
