@@ -8,3 +8,30 @@ DOMAIN,location.googleapis.com
 DOMAIN,stun.l.google.com
 DOMAIN-KEYWORD,stun
 
+# TikTok 跨境直播防检测分流规则 (2026版)
+# 建议放置在规则列表的最上方
+
+  # === 1. 深度环境检测与指纹采集 (核心拦截 - REJECT) ===
+DOMAIN-SET,tiktok_extra_settings
+DOMAIN,dm.tiktokv.com
+DOMAIN,log.tiktokv.com
+DOMAIN,log-va.tiktokv.com
+DOMAIN,log-sg.tiktokv.com
+DOMAIN,rtlog.tiktokv.com
+DOMAIN,mon.tiktokv.com
+DOMAIN,monitoring.tiktokv.com
+DOMAIN,verification.tiktokv.com
+DOMAIN,device-metrics-us.byteoversea.com
+DOMAIN,mcs-va.tiktokv.com
+DOMAIN,mcc-mnc.tiktokv.com
+DOMAIN,location.tiktokv.com
+DOMAIN-KEYWORD,analysis-sg
+DOMAIN-KEYWORD,analysis-va
+
+  # === 2. 广告与追踪拦截 (可选拦截 - REJECT) ===
+DOMAIN,ads.tiktok.com
+DOMAIN,analytics.tiktok.com
+DOMAIN,business-api.tiktok.com
+
+
+
