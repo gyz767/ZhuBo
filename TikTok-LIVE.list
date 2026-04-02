@@ -99,6 +99,29 @@ IP-CIDR,159.138.20.20/32,no-resolve
 # Windows/macOS: TikTok, TikTok.exe
 
 
+  # === 3. 业务与推流分流 (必须走固定 IP - PROXY) ===
+  # 电脑端直播推流
+DOMAIN-SUFFIX,rtmp.tiktok.com
+DOMAIN,live.tiktok.com
+DOMAIN,live-api-sg.tiktok.com
+  
+  # 手机端业务
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,ttwstatic.com
+
+  # === 4. 强制规避协议泄露 ===
+  # 建议在配置文件的全局设置中阻断 UDP 443 (QUIC)
+  # 或者添加以下规则（部分客户端支持）
+PROCESS-NAME,TikTok Live Studio
+PROCESS-NAME,com.zhiliaoapp.musically
+
+
 
 
 
