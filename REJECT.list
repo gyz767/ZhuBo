@@ -12,7 +12,6 @@ DOMAIN-KEYWORD,stun
 # 建议放置在规则列表的最上方
 
   # === 1. 深度环境检测与指纹采集 (核心拦截 - REJECT) ===
-DOMAIN-SET,tiktok_extra_settings
 DOMAIN,dm.tiktokv.com
 DOMAIN,log.tiktokv.com
 DOMAIN,log-va.tiktokv.com
