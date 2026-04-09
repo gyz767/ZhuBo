@@ -6,6 +6,9 @@ log-level: info
 external-controller: :9090
 unified-delay: true
 
+experimental:
+  sniff-tls-sni: true
+
 sniffer:
   enable: true
   parse-pure-ip: false
