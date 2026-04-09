@@ -5,164 +5,52 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
+
 sniffer:
-  sniff:
-    TLS: {ports: [1-65535], override-destination: true}
-    HTTP: {ports: [1-65535], override-destination: true}
   enable: true
-  skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
   parse-pure-ip: false
   force-dns-mapping: true
   override-destination: true
+  sniff:
+    TLS:
+      ports: [1-65535]
+      override-destination: true
+    HTTP:
+      ports: [1-65535]
+      override-destination: true
+
 dns:
   enable: true
   ipv6: false
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+
   default-nameserver:
     - 1.1.1.1
     - 8.8.8.8
+
   nameserver:
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
     - https://dns.google/dns-query
+
   fallback:
     - 223.5.5.5
     - 119.29.29.29
+
   fallback-filter:
     geoip: true
     geoip-code: CN
+
   fake-ip-filter:
-    # 局域网与标准本地保留域名
     - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
     - "*.local"
+    - "*.localhost"
+    - "*.localdomain"
     - "*.home.arpa"
-    - "localhost.ptlogin2.qq.com"
-    
-    # 远程软件Todesk
-    - '+.todesk.com'
-    - 'todesk.com'
-    
-    # NTP 时间同步（防止时间校准失败）
     - "time.*.com"
     - "time.*.gov"
     - "time.*.edu.cn"
-    - "time.*.apple.com"
-    - "time[1-7].*.com"
-    - "ntp.*.com"
-    - "ntp[1-7].*.com"
-    - "*.time.edu.cn"
     - "*.ntp.org.cn"
     - "+.pool.ntp.org"
-    - "time1.cloud.tencent.com"
-
-    # 系统服务与连接检测 (Apple/Microsoft)
-    - "swscan.apple.com"
-    - "mesu.apple.com"
-    ####################- "+.msftconnecttest.com"
-   #################### - "+.msftncsi.com"
-    ####################- "msftconnecttest.com"
-    - "*.ipv6.microsoft.com"
-
-    # STUN 与 P2P (解决游戏 NAT 类型问题)
-    #################### - "stun.*.*"
-     ####################- "stun.*.*.*"
-    #################### - "+.srv.nintendo.net"
-    #################### - "+.stun.playstation.net"
-    #################### - "xbox.*.*.microsoft.com"
-    #################### - "*.*.xboxlive.com"
-    #################### - "teredo.*.*.*"
-    #################### - "teredo.*.*"
-    - "speedtest.cros.wr.pvp.net"
-
-    # 游戏服务
-    - "+.wotgame.cn"
-    - "+.wggames.cn"
-    - "+.wowsgame.cn"
-    - "+.wargaming.net"
-    - "+.jjvip8.com"
-
-    # 音乐服务 (解除版权地域限制通常需要真 IP)
-    - "music.163.com"
-    - "*.music.163.com"
-    - "+.music.126.net"
-    - "*.126.net"
-    - "musicapi.taihe.com"
-    - "music.taihe.com"
-    - "songsearch.kugou.com"
-    - "trackercdn.kugou.com"
-    - "*.kuwo.cn"
-    - "api-jooxtt.sanook.com"
-    - "api.joox.com"
-    - "y.qq.com"
-    - "*.y.qq.com"
-    - "streamoc.music.tc.qq.com"
-    - "mobileoc.music.tc.qq.com"
-    - "isure.stream.qqmusic.qq.com"
-    - "dl.stream.qqmusic.qq.com"
-    - "aqqmusic.tc.qq.com"
-    - "amobile.music.tc.qq.com"
-    - "*.xiami.com"
-    - "+.music.migu.cn"
-
-    # 国内主流视频与资源 (防止 CDN 走代理导致卡顿)
-    - "www.douyu.com"
-    - "activityapi.huya.com"
-    - "activityapi.huya.com.w.cdngslb.com"
-    - "www.bilibili.com"
-    - "api.bilibili.com"
-    - "a.w.bilicdn1.com"
-    - "+.res.netease.com"
-
-    # Streamate Web 模式域名解析
-   #################### - "*.generflow.com"
-    
-    # ---  TikTok 业务与推流 (最高优先级) ---
-    # 确保所有 TikTok 相关域名和 CDN 强制走专用节点
- ####################   - "*.tiktokcdn.com"
-  ####################  - "*.byteoversea.com"
-   #################### - "rtmp.tiktok.com"    
-
-    # ---  CB 业务与推流 (最高优先级) ---  
-   #################### - '*.mmcdn.com'  
-  ####################  - 'global.live.mmcdn.com'
-
-    # ---  ST 业务与推流 (最高优先级) ---  
-   #################### - '*.strpst.com'      # 这是非常关键的 CDN 域名
-   #################### - '*.doppiocdn.com'
-  ####################  - 'live.doppiocdn.com'
-
-    # ---  BG 业务与推流 (最高优先级) --- 
- ####################   - 'z-us.origin.gnsbc.com'
-   #################### - '*.gnsbc.com'
-    
-    # ---  LJ 业务与推流 (最高优先级) --- 
-        # - '*.awmdm.com'
-       #  - 'awmdm.com'
-       #  - '*.jasmin.com'   
-       #  - 'static-cdn.jcdn.ws'  
-      #   - '+.jasmin.com'
-      #   - '+.livejasmin.com'
-      #   - '+.pscp.tv'       
-       #  - '+.stun.l.google.com' 
-      #   - 'stun.*'
-    # ---  C4 业务与推流 (最高优先级) --- 
-    ####################- 'origin.cam4.com'     # 针对你这条具体的推流地址
-  ####################  - 'stream*.cam4.com'
-    
-
-    # ---  SPT 业务与推流 (最高优先级) --- 
-    ####################- 'golive.streamparty.online'
-   #################### - '*.streamparty.online'
-   #################### - 'streamparty.online'
-
-    # 地理位置过滤
-    - 'geosite:cn' # 重点：过滤所有中国域名（需配配合 geo-site 数据库）
