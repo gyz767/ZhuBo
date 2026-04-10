@@ -5,24 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
-tun:
-  dns-hijack:
-    - any:53
+
 experimental:
   sniff-tls-sni: true
-
-sniffer:
-  enable: true
-  parse-pure-ip: false
-  force-dns-mapping: true
-  override-destination: true
-  sniff:
-    TLS:
-      ports: [1-65535]
-      override-destination: true
-    HTTP:
-      ports: [1-65535]
-      override-destination: true
+  
 dns:
   enable: true
   ipv6: false
