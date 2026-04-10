@@ -39,3 +39,7 @@ dns:
     - "*.localhost"
     - "*.localdomain"
     - "*.home.arpa"
+    - "+.msftconnecttest.com" 
+    - "+.msftncsi.com"
+    - "+.stun.playstation.net" 
+    - "geoip:cn" 
