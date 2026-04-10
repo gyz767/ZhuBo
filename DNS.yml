@@ -5,7 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
-
+tun:
+  dns-hijack:
+    - any:53
 experimental:
   sniff-tls-sni: true
 
