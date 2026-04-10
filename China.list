@@ -3715,3 +3715,7 @@ IP-CIDR,2a0b:b580::/48,no-resolve
 IP-CIDR,2a0b:b581::/48,no-resolve
 IP-CIDR,2a0b:b582::/48,no-resolve
 IP-CIDR,2a0b:b583::/48,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+DOMAIN-SUFFIX,cn
