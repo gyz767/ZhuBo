@@ -3,7 +3,8 @@ DOMAIN-KEYWORD,doppiocdn
 DOMAIN-KEYWORD,stripchat
 DOMAIN,zh.stripchat.com
 DOMAIN-SUFFIX,doppiocdn.com
-
+DOMAIN,ST-LINK.Stream-Live1688.net
+DOMAIN,ST-TOY.Stream-Live1688.net
 ###########################ST直播推流IP##########################
 
 IP-CIDR,4.78.139.54/32,no-resolve
