@@ -9,6 +9,19 @@ unified-delay: true
 
 experimental:
   sniff-tls-sni: true
+  protocol-sniffer:
+    enable: true
+    force-domain:
+      - "turn.icf-prod-sound.generflow.com"
+      - "+.generflow.com"
+      - "+.streamatemodels.com"
+    sniff:
+      TLS:
+        ports: [443, 8443]
+      HTTP:
+        ports: [80, 8080-8888]
+      QUIC:
+        ports: [443, 8443]
   
 dns:
   enable: true
@@ -33,6 +46,12 @@ dns:
     - "*.sktswe.net"
     - rtc.goodfone.co.kr
     - "*.chattti.com"  
+
+# 强制推流域名走国外解析，防止国内 DNS 把 IP 指向直连路径
+  nameserver-policy:
+    "turn.icf-prod-sound.generflow.com": [https://dns.google/dns-query]
+    "+.generflow.com": [https://dns.google/dns-query]
+    "+.streamatemodels.com": [https://dns.google/dns-query]
     
   nameserver:
     - 119.29.29.29
@@ -43,7 +62,7 @@ dns:
     - 1.1.1.1
     - 1.0.0.1
     - 8.8.8.8
-    
+    - https://dns.google/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
