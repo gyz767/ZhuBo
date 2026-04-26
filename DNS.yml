@@ -13,6 +13,8 @@ experimental:
     enable: true
     force-domain:
       - "turn.icf-prod-sound.generflow.com"
+      - "cf-prod-global.generflow.com"
+      - "performerclient.streamatemodels.com"      
       - "+.generflow.com"
       - "+.streamatemodels.com"
     sniff:
@@ -22,6 +24,9 @@ experimental:
         ports: [80, 8080-8888]
       QUIC:
         ports: [443, 8443]
+# 必须开启 UDP 嗅探，直播推流走的就是 UDP
+      UDP:
+        ports: [3478, 53, 443, 10000-65535]        
   
 dns:
   enable: true
@@ -50,8 +55,11 @@ dns:
 # 强制推流域名走国外解析，防止国内 DNS 把 IP 指向直连路径
   nameserver-policy:
     "turn.icf-prod-sound.generflow.com": [https://dns.google/dns-query]
+    "cf-prod-global.generflow.com": [https://dns.google/dns-query]
+    "performerclient.streamatemodels.com": [https://dns.google/dns-query]
     "+.generflow.com": [https://dns.google/dns-query]
     "+.streamatemodels.com": [https://dns.google/dns-query]
+    "+.streamate.com": [https://dns.google/dns-query]
     
   nameserver:
     - 119.29.29.29
