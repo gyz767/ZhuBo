@@ -16,7 +16,7 @@ experimental:
   sniff-tls-sni: true
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   listen: 0.0.0.0:53
   fake-ip-filter:
     - "*.lan"
