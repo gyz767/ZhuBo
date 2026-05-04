@@ -21,7 +21,6 @@ sniffer:
   force-dns-mapping: true
   override-destination: true
 
-
 dns:
   enable: true
   ipv6: true
@@ -61,4 +60,3 @@ dns:
   fallback-filter:
     geoip: true
     geoip-code: CN
-
