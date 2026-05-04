@@ -6,53 +6,39 @@ allow-lan: false
 unified-delay: true
 mode: rule
 log-level: info
-ipv6: true
+ipv6: false
 external-controller: 0.0.0.0:9090
-
-sniffer:
-  sniff:
-    TLS: {ports: [443], override-destination: true}
-    HTTP: {ports: [443], override-destination: true}
-  enable: true
-  skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
-  parse-pure-ip: false
-  force-dns-mapping: true
-  override-destination: true
-
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+experimental:
+  sniff-tls-sni: true
 dns:
   enable: true
-  ipv6: true
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  
+  ipv6: false
+  listen: 0.0.0.0:53
   fake-ip-filter:
     - "*.lan"
-    - "*.local"
-    - "*.localhost"
-    - "*.localdomain"
-    - "*.home.arpa"
-    - "+.msftconnecttest.com" 
-    - "+.msftncsi.com"
-    - "+.stun.playstation.net" 
     - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
     - xbox.*.microsoft.com
     - "*.xboxlive.com"
     - "*.teafone.com"
     - "*.sktswe.net"
     - rtc.goodfone.co.kr
-    - "*.chattti.com"  
+    - "*.chattti.com"
 
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
     - 223.6.6.6
+    - 2402:4e00::
+    - 2400:3200::1
+  
   fallback:
     - 1.1.1.1
     - 1.0.0.1
     - 8.8.8.8
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
+    - 2606:4700:4700::1111
+    - 2001:4860:4860::8888
