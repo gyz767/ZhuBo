@@ -1,33 +1,27 @@
 port: 7890
 socks-port: 7891
-allow-lan: true
-ipv6: true
-mode: Rule
-log-level: info
-external-controller: :9090
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
 unified-delay: true
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 0.0.0.0:9090
 
-experimental:
-  sniff-tls-sni: true
-  protocol-sniffer:
-    enable: true
-    force-domain:
-      - "turn.icf-prod-sound.generflow.com"
-      - "cf-prod-global.generflow.com"
-      - "performerclient.streamatemodels.com"      
-      - "+.generflow.com"
-      - "+.streamatemodels.com"
-    sniff:
-      TLS:
-        ports: [443, 8443]
-      HTTP:
-        ports: [80, 8080-8888]
-      QUIC:
-        ports: [443, 8443]
-# 必须开启 UDP 嗅探，直播推流走的就是 UDP
-      UDP:
-        ports: [3478, 53, 443, 10000-65535]        
-  
+sniffer:
+  sniff:
+    TLS: {ports: [443], override-destination: true}
+    HTTP: {ports: [443], override-destination: true}
+  enable: true
+  skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+  parse-pure-ip: false
+  force-dns-mapping: true
+  override-destination: true
+
+
 dns:
   enable: true
   ipv6: true
@@ -52,25 +46,18 @@ dns:
     - rtc.goodfone.co.kr
     - "*.chattti.com"  
 
-# 强制推流域名走国外解析，防止国内 DNS 把 IP 指向直连路径
-  nameserver-policy:
-    "turn.icf-prod-sound.generflow.com": [https://dns.google/dns-query]
-    "cf-prod-global.generflow.com": [https://dns.google/dns-query]
-    "performerclient.streamatemodels.com": [https://dns.google/dns-query]
-    "+.generflow.com": [https://dns.google/dns-query]
-    "+.streamatemodels.com": [https://dns.google/dns-query]
-    "+.streamate.com": [https://dns.google/dns-query]
-    
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
     - 223.6.6.6
-
+    - 2402:4e00::
+    - 2400:3200::1
   fallback:
     - 1.1.1.1
     - 1.0.0.1
     - 8.8.8.8
-    - https://dns.google/dns-query
+    - 2606:4700:4700::1111
+    - 2001:4860:4860::8888
   fallback-filter:
     geoip: true
     geoip-code: CN
