@@ -36,10 +36,6 @@ dns:
     - "*.sktswe.net"
     - rtc.goodfone.co.kr
     - "*.chattti.com"
-  nameserver-policy:
-    turn.icf-prod-sound.generflow.com: [https://dns.google/dns-query]
-    +.generflow.com: [https://dns.google/dns-query]
-    +.streamatemodels.com: [https://dns.google/dns-query]
 
   nameserver:
     - 119.29.29.29
