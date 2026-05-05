@@ -6,7 +6,7 @@ allow-lan: false
 unified-delay: true
 mode: rule
 log-level: info
-ipv6: false
+ipv6: true
 external-controller: 0.0.0.0:9090
   sniff-tls-sni: true
   protocol-sniffer:
