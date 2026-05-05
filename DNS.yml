@@ -97,6 +97,12 @@ dns:
     - www.douyu.com
     - activityapi.huya.com
     - activityapi.huya.com.w.cdngslb.com
+
+    - 'www.streamatemodels.com'
+    - 'performerclient.streamatemodels.com'
+    - 'cf-prod-global.generflow.com'
+    - 'turn.icf-prod-sound.generflow.com'
+    
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
