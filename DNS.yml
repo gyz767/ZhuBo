@@ -20,7 +20,7 @@ sniffer:
 dns:
   enable: true
   ipv6: true
-  listen: 0.0.0.0:53
+  listen: 0.0.0.0:1053
   use-hosts: false
   default-nameserver:
     - 119.29.29.29
