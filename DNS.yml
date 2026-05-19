@@ -21,6 +21,8 @@ dns:
   enable: true
   ipv6: true
   listen: 0.0.0.0:53
+  use-hosts: false
+  fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
