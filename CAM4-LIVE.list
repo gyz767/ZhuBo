@@ -3,11 +3,6 @@ DOMAIN-SUFFIX,cam4.io
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,cam4static.com
 DOMAIN,origin.cam4.com
-DOMAIN,c4-us.kkmm2024.top
-DOMAIN,c4-eu.kkmm2024.top
-DOMAIN,cam4-hls.xcdnpro.com
 DOMAIN-SUFFIX,cam4.com
-DOMAIN-SUFFIX,xcdnpro.com
 DOMAIN-KEYWORD,cam4
-DOMAIN-KEYWORD,xcdnpro
 IP-CIDR,5.254.101.0/24,no-resolve
