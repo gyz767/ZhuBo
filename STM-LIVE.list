@@ -8,9 +8,3 @@ DOMAIN-KEYWORD,streamatemodels
 DOMAIN,www.streamate.com
 DOMAIN-SUFFIX,streamate.com
 DOMAIN-KEYWORD,streamate
-####################直播推流密钥##########IP###############
-IP-CIDR,216.127.49.0/24,no-resolve
-IP-CIDR,216.127.53.0/24,no-resolve
-
-###############################################
-IP-ASN,11608,no-resolve
