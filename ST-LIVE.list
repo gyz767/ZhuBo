@@ -5,8 +5,3 @@ DOMAIN,zh.stripchat.com
 DOMAIN-SUFFIX,doppiocdn.com
 DOMAIN,ST-LINK.Stream-Live1688.net
 DOMAIN,ST-TOY.Stream-Live1688.net
-###########################ST直播推流IP##########################
-IP-CIDR,172.65.200.5/32,no-resolve
-IP-CIDR,35.77.201.98/32,no-resolve
-IP-CIDR,35.78.72.33/32,no-resolve
-IP-CIDR6,2606:4700:90:0:fbfc:c4b1:e14c:28e7/128,no-resolve
