@@ -6,3 +6,4 @@ DOMAIN,origin.cam4.com
 DOMAIN-SUFFIX,cam4.com
 DOMAIN-KEYWORD,cam4
 IP-CIDR,5.254.101.0/24,no-resolve
+IP-CIDR,88.211.235.0/24,no-resolve
