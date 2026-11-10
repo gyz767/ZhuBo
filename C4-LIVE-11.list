@@ -1,0 +1,17 @@
+# Ceeblue 服务的根域（已包含所有 live.ceeblue.tv 及其子域名）
+DOMAIN-SUFFIX,ceeblue.tv
+
+# Cam4 相关服务（建议用 SUFFIX 替代 KEYWORD 以防误伤）
+DOMAIN-SUFFIX,cam4.com
+DOMAIN-SUFFIX,cam4.io
+DOMAIN-SUFFIX,c4assets.com
+DOMAIN-SUFFIX,cam4static.com
+
+# IP 段规则（格式正确，保持不变）
+IP-CIDR,5.254.101.0/24,no-resolve
+IP-CIDR,88.211.235.0/24,no-resolve
+IP-CIDR,206.198.225.0/24,no-resolve
+IP-CIDR,170.23.0.0/16,no-resolve
+IP-CIDR,172.240.0.0/16,no-resolve
+IP-CIDR,199.59.90.0/24,no-resolve
+IP-CIDR,217.22.25.0/24,no-resolve
