@@ -1,5 +1,6 @@
 # Ceeblue 服务的根域（已包含所有 live.ceeblue.tv 及其子域名）
 DOMAIN-SUFFIX,ceeblue.tv
+DOMAIN-SUFFIX,live.ceeblue.tv
 
 # Cam4 相关服务（建议用 SUFFIX 替代 KEYWORD 以防误伤）
 DOMAIN-SUFFIX,cam4.com
