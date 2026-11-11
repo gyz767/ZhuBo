@@ -7,7 +7,11 @@ DOMAIN-SUFFIX,cam4.com
 DOMAIN-SUFFIX,cam4.io
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,cam4static.com
-
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,stackvaults.com
+DOMAIN-SUFFIX,xcdnpro.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,fpnpmcdn.net
 # IP 段规则（格式正确，保持不变）
 IP-CIDR,5.254.101.0/24,no-resolve
 IP-CIDR,88.211.235.0/24,no-resolve
