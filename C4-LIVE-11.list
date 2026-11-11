@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,stackvaults.com
 DOMAIN-SUFFIX,xcdnpro.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,fpnpmcdn.net
+DOMAIN-SUFFIX,amplitude.com
 # IP 段规则（格式正确，保持不变）
 IP-CIDR,5.254.101.0/24,no-resolve
 IP-CIDR,88.211.235.0/24,no-resolve
