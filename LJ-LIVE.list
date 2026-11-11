@@ -11,5 +11,5 @@ DOMAIN,cam.jasmin.com
 DOMAIN-KEYWORD,livejasmin
 DOMAIN-SUFFIX,jasmin.com
 DOMAIN-SUFFIX,livejasmin.com
-
+IP-CIDR,109.71.0.0/16,no-resolve
 IP-CIDR,95.128.0.0/16,no-resolve
